@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center;">Crud movies</h1>
+    </header>
+    <main class="container my-3">
+      <form action="./index.html" method="post" id="form" class="my-3">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="title" placeholder="title" name="">
+          <label for="title" >title</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="year" placeholder="Year">
+          <label for="year">year</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-danger">clear</button>
+      </form>
+      <table class="table table-striped table-hover table-bordered text-capitalize table-sm align-middle text-center table-responsive caption-top">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Year</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        
+         
+        </tbody>
+      </table>
+    
+    </main>
+    <div id="app"></div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
